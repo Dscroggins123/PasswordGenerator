@@ -7,7 +7,7 @@ var lowerCase = [
 var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 var symbols = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-"];
 var userPassword = [];
-var finishedPassword = document.getElementById("password")
+var passwordText = document.querySelector("#password");
 
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
@@ -15,7 +15,7 @@ var generateBtn = document.querySelector("#generate");
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+  
 
   passwordText.value = password;
 }
@@ -68,8 +68,9 @@ function start() {
         userPassword[Math.floor(Math.random() * userPassword.length)];
       console.log(newUserPassword);
     }
-    finishedPassword.textContent = newUserPassword
-    finishedPassword.appendChild(newUserPassword);
+    
+    passwordText.textContent = "Password: " + newUserPassword;
+    passwordText.appendChild(passwordText);
     // alert("Your Password is : " + newUserPassword);
   } else {
     alert("Try Again");
