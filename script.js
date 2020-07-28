@@ -56,8 +56,12 @@ generateBtn.addEventListener("click", writePassword); {
   var newUserPassword = "" ;
 
   for( var i = 0 ; i < passwordLength ; i++ ){
-    
+    newUserPassword = newUserPassword + userPassword[Math.floor(Math.random() * userPassword.length)]
+    console.log(newUserPassword)
+
+
   }
+  
   
   
 
