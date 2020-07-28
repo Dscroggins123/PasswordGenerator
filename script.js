@@ -32,22 +32,22 @@ generateBtn.addEventListener("click", writePassword); {
   var addSymbols = confirm("Would you like special symbols in your password?")
 
   if (addUpperCase === true) {
-  //  userPassword.push(upperCase);
-  //  console.log(userPassword)
+   userPassword = userPassword.concat(upperCase)
+  console.log(userPassword)
   }
    if (addLowerCase === true) {
-    // userPassword.push(lowerCase)
-    // console.log(userPassword)
+    userPassword = userPassword.concat(lowerCase)
+    console.log(userPassword)
   }
   if (addNumbers === true) {
-    // userPassword.push(numbers)
-    // console.log(userPassword)
+    
+    
     userPassword = userPassword.concat(numbers)
     console.log(userPassword)
     console.log(userPassword.length)
   }
   if (addSymbols === true){
-    // userPassword.push(symbols)
+    
     userPassword = userPassword.concat(symbols)
      console.log(userPassword)
     console.log(userPassword.length)
